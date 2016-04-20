@@ -1,0 +1,23 @@
+.ie8 #top-navigation ul {
+	top: 10px;
+	display: block;
+}
+
+.ie8 #top-navigation li {
+	float: left;
+	display: inline-block;
+	clear: right;
+	border-left: solid 1px #fff;
+}
+
+.ie8 #top-navigation li:first-child {
+	border-left: solid 0 #fff;
+}
+
+.ie8 #top-navigation ul:first-child li + li + li {
+	display: inline-block;
+}
+
+.ie8 #top-navigation ul:first-child li + li + li + li + li {
+	display: none;
+}

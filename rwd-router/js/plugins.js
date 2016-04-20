@@ -6,7 +6,7 @@
  * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
  *
  * Version: 0.5.0
- * 
+ *
  */
 (function(d){jQuery.fn.extend({slimScroll:function(o){var a=ops=d.extend({wheelStep:20,width:"auto",height:"250px",size:"7px",color:"#000",position:"right",distance:"1px",start:"top",opacity:0.4,alwaysVisible:!1,railVisible:!1,railColor:"#333",railOpacity:"0.2",railClass:"slimScrollRail",barClass:"slimScrollBar",wrapperClass:"slimScrollDiv",allowPageScroll:!1,scroll:0},o);this.each(function(){function h(a,d,e){var f=a;d&&(f=parseInt(c.css("top"))+a*B/100*c.outerHeight(),d=b.outerHeight()-c.outerHeight(),
 f=Math.min(Math.max(f,0),d),c.css({top:f+"px"}));k=parseInt(c.css("top"))/(b.outerHeight()-c.outerHeight());f=k*(b[0].scrollHeight-b.outerHeight());e&&(f=a,a=f/b[0].scrollHeight*b.outerHeight(),c.css({top:a+"px"}));b.scrollTop(f);p();i()}function w(){q=Math.max(b.outerHeight()/b[0].scrollHeight*b.outerHeight(),o);c.css({height:q+"px"})}function p(){w();clearTimeout(x);l=C&&k==~~k;q>=b.outerHeight()?l=!0:(c.stop(!0,!0).fadeIn("fast"),y&&g.stop(!0,!0).fadeIn("fast"))}function i(){m||(x=setTimeout(function(){!r&&
